@@ -28,7 +28,9 @@ public interface SystemMenuDao {
 
     int updateSelective(SystemMenuDo systemMenuDo);
 
-    int deleteById(@Param("id") Integer id);
+    int deleteByParentId(@Param("parentId") Integer parentId);
+
+    int updateButtonTitle(SystemMenuDo systemMenuDo);
 
 }
 
